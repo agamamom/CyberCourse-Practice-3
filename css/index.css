@@ -52,4 +52,42 @@ body{
     border-bottom: 0.8px solid #b6b4b44d;
     
 }
+/* CAROUSEL */
+.carousel-inner .carousel-caption{
+    top: 50%;
+    text-align: left;
+}
+.carousel-caption h5{
+    color: #fbbd61;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+.carousel-caption h4{
+    font-size: 3.4rem;
+    letter-spacing: 2px;
+}
+.carousel-item .carousel-caption p{
+    font-size: 1.2rem;
+    margin-bottom: 1.3rem;
+}
+.carousel__button span{
+    height: 47px;
+    width: 47px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    line-height: 47px;
+    text-align: center;
+    display: inline-block;
+    font-size: 0.8rem;
+    margin-right: 10px;
+}
+.carousel__button button{
+    padding: 12px 24px;
+    font-size: 0.8rem;
+    letter-spacing: 4px;
+    background: linear-gradient(90deg, #fbbd61, #ec7532);
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+}
 
