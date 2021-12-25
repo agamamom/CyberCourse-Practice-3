@@ -70,7 +70,10 @@ body{
     font-size: 1.2rem;
     margin-bottom: 1.3rem;
 }
-.carousel__button span{
+.carousel__button{
+    
+}
+.carousel__button>span{
     height: 47px;
     width: 47px;
     border: 2px solid #fff;
@@ -81,13 +84,40 @@ body{
     font-size: 0.8rem;
     margin-right: 10px;
 }
+.carousel__button .btn:hover{
+    color: #fff;
+}
 .carousel__button button{
     padding: 12px 24px;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     letter-spacing: 4px;
     background: linear-gradient(90deg, #fbbd61, #ec7532);
     border: none;
     border-radius: 30px;
     color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.carousel__button button span,
+.carousel__button button span i{
+    position: relative;
+    z-index: 2;
+}
+.carousel__button button::after{
+    content: '';
+    display: block;
+    width: 106%;
+    height: 100%;
+    background-color: #ec7532;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform: skewX(25deg) translateX(-115%);
+    transition: all .5s;
+    z-index: 1;
+}
+.carousel__button button:hover::after{
+
+    transform:  translateX(-2%) skewX(25deg);
 }
 
