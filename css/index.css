@@ -54,7 +54,7 @@ body{
 }
 /* CAROUSEL */
 .carousel-inner .carousel-caption{
-    top: 50%;
+    top: 31%;
     text-align: left;
 }
 .carousel-caption h5{
@@ -120,4 +120,22 @@ body{
 
     transform:  translateX(-2%) skewX(25deg);
 }
-
+#carouselExampleCaptions .carousel-indicators button{
+    width: 10px;
+    height: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: transparent;
+}
+#carouselExampleCaptions .carousel-indicators button.active{
+    background-color: white;
+    background-clip: border-box;
+}
+#carouselExampleCaptions .carousel-indicators {
+    justify-content: flex-start;
+    margin-bottom: 7rem;
+}
+#carouselExampleCaptions .carousel-indicators [data-bs-target]{
+    opacity: 1;
+    box-sizing: border-box;
+}
