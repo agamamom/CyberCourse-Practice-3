@@ -27,6 +27,27 @@ body{
 .line.active::after{
     width: 100%;
 }
+.section{
+    padding: 80px 0;
+}
+.title{
+    color:#ec7532;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #71717131;
+    margin-bottom: 40px;
+    padding: 20px 0;
+    position: relative;
+}
+.title::after{
+    content: '';
+    display: block;
+    width: 128px;
+    height: 4px;
+    top: 93%;
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    position: absolute;
+}
 /* MAIN CSS */
 /* HEADER */
 header{
@@ -34,6 +55,16 @@ header{
     z-index: 2;
     top: 10px;
     left: 15.1%;
+}
+.container-md{
+    width: 1100px;
+}
+.navbar-toggler:focus{
+    outline: 0;
+    box-shadow: none;
+}
+.navbar-toggler-icon .fa-bars{
+    color:#fbbd61;
 }
 .sub-topNav{
     display: flex;
@@ -70,6 +101,7 @@ header{
     color: #fbbd61;
     font-size: 1rem;
     letter-spacing: 2px;
+    animation-delay: .5s;
 }
 .carousel-caption h4{
     font-size: 3.4rem;
@@ -78,6 +110,9 @@ header{
 .carousel-item .carousel-caption p{
     font-size: 1.2rem;
     margin-bottom: 1.3rem;
+}
+.carousel__button{
+    animation-delay: .5s;
 }
 .carousel__button>span{
     height: 47px;
