@@ -190,3 +190,31 @@ header{
     display:block;
     background: linear-gradient(to top, black, transparent);
 }
+
+/* NEW IN */
+.newIn .newIn__item{
+    text-align: center;
+}
+.newIn__bottom{
+    margin-top: 14px;
+}
+.newIn__bottom p{
+    font-size: 1.1rem;
+    color: #444343;
+}
+.newIn__bottom .star{
+    color:#fbbd61;
+    font-size: 1.1rem;
+}
+
+
+
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 1400px){
+    .newIn .container{
+        max-width: 1132px;
+    }
+};
+    
