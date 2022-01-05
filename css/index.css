@@ -192,6 +192,10 @@ header{
 }
 
 /* NEW IN */
+.newIn__item{
+    position: relative;
+    overflow: hidden;
+}
 .newIn .newIn__item{
     text-align: center;
 }
@@ -206,7 +210,24 @@ header{
     color:#fbbd61;
     font-size: 1.1rem;
 }
+.newIn__item>img{
+    width: 312px;
+}
 
+.newIn__overlay{
+    width: 170%;
+    height: 85%;
+    top: 0;
+    left: 0;
+    padding: 10px 10px;
+    background: linear-gradient(180deg, #fbbd61, #ec7532);
+    position: absolute;
+    transform: skewX(40deg) translateX(-130%);
+    transition: all .4s;
+}
+.newIn__item:hover .newIn__overlay{
+    transform: skewX(40deg) translateX(0%);
+}
 
 
 
