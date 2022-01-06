@@ -42,7 +42,7 @@ a{
     padding: 20px 0;
     position: relative;
 }
-.title::after{
+/* .title::after{
     content: '';
     display: block;
     width: 128px;
@@ -50,7 +50,7 @@ a{
     top: 93%;
     background: linear-gradient(to right, #fbbd61, #ec7532);
     position: absolute;
-}
+} */
 /* MAIN CSS */
 /* HEADER */
 header{
@@ -100,7 +100,7 @@ header{
     background-color: black;
     width: 100%;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     padding: 5px;
     transform: translateY(-100%);
     transition: all .4s;
@@ -208,6 +208,15 @@ header{
 }
 
 /* NEW IN */
+.newIn .title::after{
+    content: '';
+    display: block;
+    width: 128px;
+    height: 4px;
+    top: 93%;
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    position: absolute;
+}
 .newIn .newIn__item{
     text-align: center;
 }
@@ -284,6 +293,110 @@ header{
     transform: scale(0.9)
 }
 
+/* SHOWTIME */
+.showTime__detail p:nth-child(1){
+    font-size: 1rem;
+    color: #ec7532;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.showTime__detail p:nth-child(2){
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+    line-height:normal;
+}
+.showTime__detail p:nth-child(3){
+    color: #717171;
+    font-size: 1rem;
+}
+.showTime__detail a
+{
+    color: #ec7532;
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+.showTime__detail .fa-chevron-right{
+    font-size: 0.7rem;
+}
+.viewTime{
+    display: flex;
+    align-items: center;
+}
+.viewTime p:nth-child(1){
+    color: rgb(75, 74, 74);
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+}
+.viewTime p:nth-child(2){
+    border: 1px solid #e9e8e8;
+    background-color: #e9e8e8;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    padding: 8px 14px;
+    letter-spacing: 2px;
+    color: #7171719d;
+}
+.viewTime p:nth-child(3),
+.viewTime p:nth-child(4),
+.viewTime p:nth-child(5){
+    border: 1px solid #D8D8D8;
+    background-color: #D8D8D8;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    letter-spacing: 2px;
+    color: #2e2d2d9d;
+}
+.viewTime p+p{
+    margin-right: 5px;
+}
+.showTime__time .duration p{
+    color: rgb(63, 62, 62);
+    font-size: 0.76rem;
+    letter-spacing: 2px;
+    margin-right: 5px;
+}
+.showTime__time .duration span{
+    border: 1px solid #444343;
+    border-radius: 100%;
+    background-color: #444343;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    font-size: 0.75rem;
+}
+.showTimes .line{
+    font-size: 1rem;
+    letter-spacing: 2px;
+    padding: 15px 20px;
+    color: rgb(0, 0, 0);
+}
+.showTimes .nav-tabs{
+    outline: none;
+}
+.showTimes .nav-tabs .nav-item{
+    outline: none;
+}
+.showTimes .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    border: none;
+    color:#ec7532;
+}
+
+.showTimes .nav-tabs .nav-link:focus-visible, .nav-tabs .nav-link:hover{
+    border-color: #fff;
+    outline: none;
+}
+.showTimes .nav-link:focus, .nav-link:hover{
+    color: black;
+}
+.showTimes .nav-tabs .nav-link{
+    margin-bottom: 0;
+}
 
 /* RESPONSIVE */
 @media screen and (max-width: 1400px){
