@@ -64,6 +64,37 @@
             </div>
         </nav>
     </header>
+    <div id="HeaderFixed">
+        <nav class="navbar container-md navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./img/logo.svg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item line active">
+                            <a class="nav-link " aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item line">
+                            <a class="nav-link" href="#">WHAT'S ON</a>
+                        </li>
+                        <li class="nav-item line">
+                            <a class="nav-link" href="#">SHORTCODES</a>
+                        </li>
+                        <li class="nav-item line">
+                            <a class="nav-link" href="#">NEW</a>
+                        </li>
+                        <li class="nav-item line">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
     <!-- CAROUSEL -->
     <!-- data-bs-ride="carousel" -->
     <div class="movieCarousel">
@@ -147,9 +178,19 @@
             <div class="title">NEW IN</div>
             <div class="row">
                 <div class="col-3 newIn__item">
-                    <img class="img-fluid" src="./img/movie-1.jpg" alt="movie1">
-                    <div class="newIn__overlay"></div>
-                    <div class="newIn__play"></div>
+                    <div class="newIn__img">
+                        <img class="img-fluid" src="./img/movie-1.jpg" alt="movie1">
+                        <div class="newIn__overlay"></div>
+                        <div class="newIn__play">
+                            <div class="newIn__play-item">
+                                <a href="#"><i class="fas fa-play"></i></a>
+                                <a href="#">
+                                    <p class="Link-ReadMore">READ MORE</p>
+                                </a>
+                                <p>Released: 7 Mar, 2017</p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="newIn__bottom">
                         <p>The last post</p>
                         <div class="star">
@@ -162,9 +203,19 @@
                     </div>
                 </div>
                 <div class="col-3 newIn__item">
-                    <img class="img-fluid" src="./img/movie-1.jpg" alt="movie1">
-                    <div class="newIn__overlay"></div>
-                    <div class="newIn__play"></div>
+                    <div class="newIn__img">
+                        <img class="img-fluid" src="./img/movie-2.jpg" alt="movie1">
+                        <div class="newIn__overlay"></div>
+                        <div class="newIn__play">
+                            <div class="newIn__play-item">
+                                <a href="#"><i class="fas fa-play"></i></a>
+                                <a href="#">
+                                    <p class="Link-ReadMore">READ MORE</p>
+                                </a>
+                                <p>Released: 7 Mar, 2017</p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="newIn__bottom">
                         <p>The last post</p>
                         <div class="star">
@@ -177,9 +228,19 @@
                     </div>
                 </div>
                 <div class="col-3 newIn__item">
-                    <img class="img-fluid" src="./img/movie-1.jpg" alt="movie1">
-                    <div class="newIn__overlay"></div>
-                    <div class="newIn__play"></div>
+                    <div class="newIn__img">
+                        <img class="img-fluid" src="./img/movie-3.jpg" alt="movie1">
+                        <div class="newIn__overlay"></div>
+                        <div class="newIn__play">
+                            <div class="newIn__play-item">
+                                <a href="#"><i class="fas fa-play"></i></a>
+                                <a href="#">
+                                    <p class="Link-ReadMore">READ MORE</p>
+                                </a>
+                                <p>Released: 7 Mar, 2017</p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="newIn__bottom">
                         <p>The last post</p>
                         <div class="star">
@@ -192,9 +253,19 @@
                     </div>
                 </div>
                 <div class="col-3 newIn__item">
-                    <img class="img-fluid" src="./img/movie-1.jpg" alt="movie1">
-                    <div class="newIn__overlay"></div>
-                    <div class="newIn__play"></div>
+                    <div class="newIn__img">
+                        <img class="img-fluid" src="./img/movie-4.jpg" alt="movie1">
+                        <div class="newIn__overlay"></div>
+                        <div class="newIn__play">
+                            <div class="newIn__play-item">
+                                <a href="#"><i class="fas fa-play"></i></a>
+                                <a href="#">
+                                    <p class="Link-ReadMore">READ MORE</p>
+                                </a>
+                                <p>Released: 7 Mar, 2017</p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="newIn__bottom">
                         <p>The last post</p>
                         <div class="star">
@@ -237,6 +308,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
         </script>
+
+    <!-- MAIN JS -->
+    <script>
+        window.onscroll = function () {
+            //Code tạo hiệu ứng xuất hiện thanh màu đen khi scroll
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                // translate(-50%,0)
+                document.getElementById("HeaderFixed").style.transform = "translateY(0)";
+            } else {
+                document.getElementById("HeaderFixed").style.transform = "translateY(-100%)";
+            }
+        }
+    </script>
 </body>
 
 </html>
