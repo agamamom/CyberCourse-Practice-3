@@ -371,36 +371,53 @@ header{
     font-size: 0.75rem;
 }
 .showTimes .line{
-    font-size: 1rem;
+    font-size: 1.2rem;
     letter-spacing: 2px;
-    padding: 15px 20px;
-    color: rgb(0, 0, 0);
+    color: rgb(54, 54, 54);
+}
+.showTimes .nav-tabs .nav-item .line::after{
+    position: absolute;
+    top: 96%;
+    left: 0;
+    height: 3.4px;
 }
 .showTimes .nav-tabs{
     outline: none;
 }
 .showTimes .nav-tabs .nav-item{
     outline: none;
+    position: relative;
 }
 .showTimes .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
     border: none;
     color:#ec7532;
 }
-
-.showTimes .nav-tabs .nav-link:focus-visible, .nav-tabs .nav-link:hover{
-    border-color: #fff;
+.showTimes .nav-tabs .nav-link:focus-visible, 
+.nav-tabs .nav-link:hover,
+.showTimes .nav-link:focus{
+    border: none;
     outline: none;
-}
-.showTimes .nav-link:focus, .nav-link:hover{
-    color: black;
 }
 .showTimes .nav-tabs .nav-link{
     margin-bottom: 0;
+    border: none;
+    
+}
+.showTimes .nav-link span{
+    padding:11px 13px;
+    display: block;
+}
+.showTime__row{
+    padding: 10px 0;
+
+}
+.showTime__row img{
+    border-radius: 10px;
 }
 
 /* RESPONSIVE */
 @media screen and (max-width: 1400px){
-    .newIn .container{
+     .container{
         max-width: 1132px;
     }
 };
