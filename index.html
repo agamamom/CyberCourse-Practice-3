@@ -22,6 +22,8 @@
 
     <!-- ANIMATED CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- VENOBOX -->
+    <link rel="stylesheet" href="./css/venobox.min.css">
     <!-- Index CSS -->
     <link rel="stylesheet" href="./css/index.css">
 </head>
@@ -757,7 +759,7 @@
     <div class="comingSoon section">
         <div class="container">
             <div class="title">COMING SOON</div>
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-6 comingSoon__content">
                     <p>COMEDY, CRIME</p>
                     <p>The Hangover Part III</p>
@@ -776,21 +778,70 @@
                     <a href="#">MORE INFO <i class="fas fa-angle-right"></i></a>
                 </div>
                 <div class="col-6">
-                    <div class="comingSoon__Video">
-                        <img src="./img/slide-3-video.png" alt="slide3">
-                        <a href="#"><i class="fas fa-play"></i></a>
-                    </div>
+                    <a class="my-video-links" data-autoplay="true" data-vbtype="video"
+                        href="https://youtu.be/jGhmusBp5s0">
+                        <div class="comingSoon__Video">
+                            <img src="./img/slide-3-video.png" alt="slide3">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
     <!-- MOVIELIST -->
-    <div class="movieList">
-
+    <div class="movieList section">
+        <div class="container">
+            <div class="row">
+                <div class="col-2 movieList__item">
+                    <div class="movieList__img">
+                        <img src="./img/movie-9.jpg" alt="" class="img-fluid">
+                        <div class="movieList__overlay"></div>
+                    </div>
+                </div>
+                <div class="col-2 movieList__item">
+                    <div class="movieList__img">
+                        <img src="./img/movie-11.jpg" alt="" class="img-fluid">
+                        <div class="movieList__overlay"></div>
+                    </div>
+                </div>
+                <div class="col-2 movieList__item">
+                    <div class="movieList__img">
+                        <img src="./img/movie-12.jpg" alt="" class="img-fluid">
+                        <div class="movieList__overlay"></div>
+                    </div>
+                </div>
+                <div class="col-2 movieList__item">
+                    <div class="movieList__img">
+                        <img src="./img/movie-13.jpg" alt="" class="img-fluid">
+                        <div class="movieList__overlay"></div>
+                    </div>
+                </div>
+                <div class="col-2 movieList__item">
+                    <div class="movieList__img">
+                        <img src="./img/movie-14.jpg" alt="" class="img-fluid">
+                        <div class="movieList__overlay"></div>
+                    </div>
+                </div>
+                <div class="col-2 movieList__item">
+                    <div class="movieList__img">
+                        <img src="./img/movie-8.jpg" alt="" class="img-fluid">
+                        <div class="movieList__overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- CONTACT -->
-    <div class="contact">
-
+    <div class="contact section">
+        <div class="container">
+            <div class="row contact__content">
+                <div class="col-12 ">
+                    <p>Need help? Contact our support team on</p>
+                    <a href="tel:dathoang30182001@gmail.com">096 105 1014</a>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- FOOTER -->
     <div class="footer">
@@ -816,6 +867,14 @@
                 document.getElementById("HeaderFixed").style.transform = "translateY(-100%)";
             }
         }
+    </script>
+
+    <!-- VENOBOX -->
+    <script src="./js/venobox.min.js"></script>
+    <script>
+        new VenoBox({
+            selector: '.my-video-links',
+        });
     </script>
 </body>
 
