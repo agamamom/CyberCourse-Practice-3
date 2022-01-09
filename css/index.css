@@ -416,7 +416,83 @@ header{
 .showTime__row img{
     border-radius: 10px;
 }
-
+#myTabContent .tab-pane .showTime__row:last-child{
+    border-bottom: none;
+}
+/* COMINGSOON */
+.comingSoon{
+    background:#101010 url('../img/slide-3.png'); 
+    background-size: cover;
+}
+.comingSoon .title::after{
+    content: '';
+    display: block;
+    width: 128px;
+    height: 4px;
+    top: 93%;
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    position: absolute;
+}
+.comingSoon .title{
+    color: white;
+}
+.comingSoon__content p:nth-child(1){
+    color: #ec7532;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+.comingSoon__content p:nth-child(2){
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+.comingSoon__content p{
+    color: white;
+    font-size: 1rem;
+}
+.comingSoon__calendar{
+    margin-bottom: 1.4rem;
+}
+.comingSoon__calendar .fa-star{
+    font-size: 1rem;
+    color:#fbbd61;
+    margin-right: 2px;
+}
+.comingSoon__calendar .fa-calendar-alt{
+    color: white;
+    font-size: 1rem;
+    margin: 0 15px;
+}
+.comingSoon__calendar span{
+    color: white;
+    font-size: 1rem;
+}
+.comingSoon__content a{
+    color: #ec7532;
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+    transition: all .3s;
+}
+.comingSoon__content a:hover{
+    color: white;
+}
+.comingSoon__Video{
+    position: relative;
+}
+.comingSoon__Video i{
+    position: absolute;
+    font-size: 1.8rem;
+    color: white;
+    top: 37%;
+    left: 37%;
+    transition: all .4s;
+    border-radius: 100%;
+    padding: 26px;
+    border: 1px solid #ec7532;
+}  
+.comingSoon__Video i:hover{
+    transform: scale(0.85);
+}
 /* RESPONSIVE */
 @media screen and (max-width: 1400px){
      .container{
