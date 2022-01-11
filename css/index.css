@@ -113,10 +113,13 @@ header{
     transform: translateY(-100%);
     transition: all .4s;
 }
-#HeaderFixed .container-md{
+/* #HeaderFixed .container-md{
     width: 1060px;
-}
+} */
 /* CAROUSEL */
+.movieCarousel{
+    height: 654px;
+}
 .carousel-inner .carousel-caption{
     top: 31%;
     text-align: left;
@@ -131,6 +134,19 @@ header{
 .carousel-caption h4{
     font-size: 3.4rem;
     letter-spacing: 2px;
+}
+.carousel-inner .carousel-item{
+    background-size: cover;
+    background-position: center;
+}
+.carousel-inner .carousel-item:nth-child(1){
+    background-image: url(../img/hero-1.jpg);
+}
+.carousel-inner .carousel-item:nth-child(2){
+    background-image: url(../img/hero-2.jpg);
+}
+.carousel-inner .carousel-item:nth-child(3){
+    background-image: url(../img/hero-3.jpg);
 }
 .carousel-item .carousel-caption p{
     font-size: 1.2rem;
@@ -600,6 +616,21 @@ header{
     }
     #navbarSupportedContent .navbar-nav .nav-item{
         border-bottom: none;
+    }
+    .line.active::after{
+        width: 0;
+    }
+    #navbarSupportedContent .navbar-nav .nav-item.active .nav-link{
+        color: #ec7532;
+    }
+    #HeaderFixed .navbar-brand{
+        margin-left: 1rem;
+    }
+    #HeaderFixed .navbar-toggler{
+        padding: 0rem 0.3rem;
+    }
+    #HeaderFixed .navbar-toggler .navbar-toggler-icon{
+        height: 20px;
     }
 }
 @media screen and (min-width: 320px) and (max-width: 480px){
