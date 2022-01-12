@@ -123,7 +123,8 @@ header{
 .carousel-inner .carousel-caption{
     top: 31%;
     text-align: left;
-    left: 6.5%
+    left: 6.5%;
+    width: 87%;
 }
 .carousel-caption h5{
     color: #fbbd61;
@@ -608,8 +609,10 @@ header{
     .navbar-brand img{
         width: 20vw;
     }
+    
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    /* HEADER */
     .navbar-nav{
         background: #000000ec;
         text-align: center;
@@ -632,6 +635,13 @@ header{
     #HeaderFixed .navbar-toggler .navbar-toggler-icon{
         height: 20px;
     }
+    /* CAROUSEL */
+    .carousel-caption h4{
+        font-size: 2.5rem;
+    }
+    .carousel-indicators{
+        display: none;
+    }
 }
 @media screen and (min-width: 320px) and (max-width: 480px){
     /* HEADER */
@@ -645,5 +655,8 @@ header{
         padding: 0 0;
         line-height: 0;
     } 
+    .carousel-indicators{
+        display: none;
+    }
 };
     
