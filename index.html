@@ -190,7 +190,7 @@
         <div class="container p-4">
             <div class="title">NEW IN</div>
             <div class="row">
-                <div class="col-6 col-sm-6 col-md-3 newIn__item">
+                <div class="col-6 col-md-3 newIn__item">
                     <div class="newIn__img">
                         <img class="img-fluid" src="./img/movie-1.jpg" alt="movie1">
                         <div class="newIn__overlay"></div>
@@ -206,7 +206,7 @@
                     </div>
                     <div class="newIn__bottom">
                         <p>The last post</p>
-                        <div class="star">
+                        <div class="star pb-3 pb-md-0">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -215,7 +215,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-sm-6 col-md-3 newIn__item">
+                <div class="col-6 col-md-3 newIn__item">
                     <div class="newIn__img">
                         <img class="img-fluid" src="./img/movie-2.jpg" alt="movie1">
                         <div class="newIn__overlay"></div>
@@ -231,7 +231,7 @@
                     </div>
                     <div class="newIn__bottom">
                         <p>The last post</p>
-                        <div class="star">
+                        <div class="star pb-3 pb-md-0">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -240,7 +240,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-sm-6 col-md-3 newIn__item">
+                <div class="col-6 col-md-3 newIn__item">
                     <div class="newIn__img">
                         <img class="img-fluid" src="./img/movie-3.jpg" alt="movie1">
                         <div class="newIn__overlay"></div>
@@ -265,7 +265,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-sm-6 col-md-3 newIn__item">
+                <div class="col-6 col-md-3 newIn__item">
                     <div class="newIn__img">
                         <img class="img-fluid" src="./img/movie-4.jpg" alt="movie1">
                         <div class="newIn__overlay"></div>
@@ -296,7 +296,7 @@
     <!-- SHOWTIMES -->
     <div class="showTimes section p-4">
         <div class="container">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <ul class="nav nav-tabs flex-column flex-sm-row" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active line" id="mo-tab" data-bs-toggle="tab" data-bs-target="#mo"
                         type="button" role="tab" aria-controls="mo" aria-selected="true">
@@ -343,33 +343,38 @@
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="mo" role="tabpanel" aria-labelledby="mo-tab">
                     <div class="row showTime__row">
-                        <div class="col-2">
+                        <div class="col-12 col-md-3 col-lg-2">
                             <img src="./img/movie-5.jpg" alt="mo5" class="img-fluid">
                         </div>
-                        <div class="col-10 showTime__detail">
+                        <div class="col-12 col-md-9 col-lg-10 showTime__detail mt-4 mt-md-0">
                             <p class="mb-0">ACTION, ADVENTURE, FANTASY</p>
                             <p class="mb-2">Captain America: The First Avenger</p>
                             <p class="mb-4">European mercenaries searching for black powder become embroiled in the
                                 defense of It's
                                 over of China against a horde of monstrous creatures.</p>
                             <p><a href="#">FULL SYNOPSIS <i class="fas fa-chevron-right"></i></a></p>
-                            <div class="showTime__time d-flex align-items-center justify-content-between">
-                                <div class="viewTime">
-                                    <p class="mb-0"><i class="fas fa-clock"></i>VIEWING TIMES</p>
-                                    <button>
-                                        10:30
-                                    </button>
-                                    <button>
-                                        12:30
-                                    </button>
-                                    <button>
-                                        15:30
-                                    </button>
-                                    <button>
-                                        17:30
-                                    </button>
+                            <div
+                                class="showTime__time d-flex align-items-md-center justify-content-md-between flex-column flex-md-row">
+                                <div class="viewTime flex-column flex-lg-row">
+                                    <div class="viewTime--column1">
+                                        <p class="mb-0"><i class="fas fa-clock"></i>VIEWING TIMES</p>
+                                    </div>
+                                    <div class="viewTime--column2">
+                                        <button>
+                                            10:30
+                                        </button>
+                                        <button>
+                                            12:30
+                                        </button>
+                                        <button>
+                                            15:30
+                                        </button>
+                                        <button>
+                                            17:30
+                                        </button>
+                                    </div>
                                 </div>
-                                <div class="duration d-flex align-items-center justify-content-center">
+                                <div class="duration d-flex align-items-center justify-content-md-center">
                                     <p class="mb-0">105 MINS</p>
                                     <span>15</span>
                                 </div>
@@ -380,14 +385,14 @@
                         <div class="col-2">
                             <img src="./img/movie-7.jpg" alt="mo7" class="img-fluid">
                         </div>
-                        <div class="col-10 showTime__detail">
+                        <div class="col-10 showTime__detail ">
                             <p class="mb-0">ACTION, ADVENTURE, FANTASY</p>
                             <p class="mb-2">Captain America: The First Avenger</p>
                             <p class="mb-4">European mercenaries searching for black powder become embroiled in the
                                 defense of It's
                                 over of China against a horde of monstrous creatures.</p>
                             <p><a href="#">FULL SYNOPSIS <i class="fas fa-chevron-right"></i></a></p>
-                            <div class="showTime__time d-flex align-items-center justify-content-between">
+                            <div class="showTime__time d-flex align-items-md-center justify-content-between ">
                                 <div class="viewTime">
                                     <p class="mb-0"><i class="fas fa-clock"></i>VIEWING TIMES</p>
                                     <button>
